@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package calculator;
+package core.models;
 
 /**
  *
@@ -20,6 +20,10 @@ public class Operation {
         this.number2 = number2;
         this.operator = operator;
         this.result = result;
+    }
+
+    public double getResult() {
+        return result;
     }
 
     @Override

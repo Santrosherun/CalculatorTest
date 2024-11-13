@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package calculator;
+package core.models;
 
 import java.util.ArrayList;
 
@@ -11,6 +11,16 @@ import java.util.ArrayList;
  * @author edangulo
  */
 public class History {
+    
+    public static History instance;
+
+    
+    public static History getIntance(){
+        if(instance == null){
+            instance = new History();
+        }
+        return instance;
+    }
     
     private ArrayList<Operation> operations;
 
